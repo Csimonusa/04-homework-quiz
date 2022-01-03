@@ -18,12 +18,12 @@
 
     <main>
 
-        <section>
+        <section id="intro">
             <h1>Buccaneers Trivia!</h1>
             <p>
                 Answer the following questions before the timer runs out. Every incorrect answer deducts 5 seconds from your remaining time. goodluck!
             </p>
-            <button>Start</button>
+            <button class="start-button">Start</button>
         </section>
 
         <section id="q1" class="questions">
@@ -31,10 +31,10 @@
                 Who was the first Buccaneer to be inducted into the Hall Of Fame?
             </p>
             <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
+                <li><button id="correct">Lee Roy Selmon</button></li>
+                <li><button id="wrong">John Lynch</button></li>
+                <li><button id="wrong">Ron Wolf</button></li>
+                <li><button id="wrong">Tony Dungy</button></li>                
             </ul>
         </section>
 
@@ -43,10 +43,10 @@
                 The Tampa Bay Buccaneers won Super Bowl XXXVII over what team?
             </p>
             <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
+                <li><button id="correct">Oakland Raiders</button></li>
+                <li><button id="wrong">Miami Dolphins</button></li>
+                <li><button id="wrong">Cleveland Browns</button></li>
+                <li><button id="wrong">Denver Broncos</button></li>                
             </ul>
         </section>
 
@@ -55,10 +55,10 @@
                 The Tampa Bay Bucaneers won Super Bowl LV over what team?
             </p>
             <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
+                <li><button id="correct">Kansas City Cheifs</button></li>
+                <li><button id="wrong">Indianapolis Colts</button></li>
+                <li><button id="wrong">Tennessee Titans</button></li>
+                <li><button id="wrong">Houston Texans</button></li>                
             </ul>
         </section>
 
@@ -67,62 +67,14 @@
                 What divison do the Tampa Bay Bucaneers play in?
             </p>
             <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
+                <li><button id="correct">NFC South</button></li>
+                <li><button id="wrong">NFC North</button></li>
+                <li><button id="wrong">AFC South</button></li>
+                <li><button id="wrong">AFC North</button></li>                
             </ul>
         </section>
 
-        <section id="q5" class="questions">
-            <p>
-                Who was the starting quarterback for the Tampa Bay Bucaneers from 2015-2019?
-            </p>
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
-            </ul>
-        </section>
-
-        <section id="q6" class="questions">
-            <p>
-                Which Bucaneers QB holds the record for the most pick-sixes thrown in one season?
-            </p>
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
-            </ul>
-        </section>
-
-        <section id="q7" class="questions">
-            <p>
-                Who did the Buccaneers meet in their first ever playoff game?
-            </p>
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
-            </ul>
-        </section>
-
-        <section id="q8" class="questions">
-            <p>
-                Who was the first head coach for the Bucaneers?
-            </p>
-            <ul>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>
-                <li><button></button></li>                
-            </ul>
-        </section>
-
-        <section>
+        <section id="end">
             <p>
                 The end!
             </p>
@@ -131,8 +83,8 @@
             </p>
             <form>
                 <label>Enter your initials!</label>
-                <input type="text">
-                <input type="text">
+                <input id="initials" type="text">
+                <input id="submit" type="submit">
             </form>
         </section>
 

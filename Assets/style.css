@@ -11,10 +11,14 @@ header {
     align-items: center;
 }
 
+#hide {
+    display: none;
+}
+
 .questions {
     display: none;
 }
 
- #end {
-     display: none;
- }
+#end {
+    display: none;
+}

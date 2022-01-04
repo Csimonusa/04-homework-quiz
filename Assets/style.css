@@ -15,9 +15,23 @@ header {
     display: none;
 }
 
-.questions {
+#show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#show ul {
+    display: flex;
+    list-style-type: none;
+    padding-inline-end: 40px;
+}
+
+.questions, .questions2, .questions3, .questions4 {
     display: none;
 }
+
 
 #end {
     display: none;

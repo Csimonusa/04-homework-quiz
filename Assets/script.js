@@ -2,12 +2,24 @@ var time = 30
 var timer = document.getElementById("time")
 var timerId
 var startbtn = document.querySelector(".start-button")
-var wrongChoice = document.querySelector(".wrong")
+var wc1 = document.querySelector(".wrong")
+var wc2 = document.querySelector(".wrong1")
+var wc3 = document.querySelector(".wrong2")
+var wc4 = document.querySelector(".wrong3")
+var wc5 = document.querySelector(".wrong4")
+var wc6 = document.querySelector(".wrong5")
+var wc7 = document.querySelector(".wrong6")
+var wc8 = document.querySelector(".wrong7")
+var wc9 = document.querySelector(".wrong8")
+var wc10 = document.querySelector(".wrong9")
+var wc11 = document.querySelector(".wrong10")
+var wc12 = document.querySelector(".wrong11")
 startbtn.onclick = start
 var correct = document.getElementById("correct")
 var correctTwo = document.getElementById("correct2")
 var correctThree = document.getElementById("correct3")
 var correctFour = document.getElementById("correct4")
+var score = document.getElementById("score")
 
 function start() {
     var startQuiz = document.getElementById("intro")
@@ -25,6 +37,16 @@ function counter() {
 
     if (time <= 0) {
         time = 1 // 0 wouldnt work here???? showed -1 so i had to do +1 to fix
+        var questions = document.querySelector(".questions")
+        questions.setAttribute("id", "hide")
+        var questions = document.querySelector(".questions2")
+        questions.setAttribute("id", "hide")
+        var questions = document.querySelector(".questions3")
+        questions.setAttribute("id", "hide")
+        var questions = document.querySelector(".questions4")
+        questions.setAttribute("id", "hide")
+        var ending = document.getElementById("end")
+        ending.setAttribute("id", "show")
     }
 }
 
@@ -33,7 +55,18 @@ function wrong() {
         timer.textContent = time
 }
 
-wrongChoice.addEventListener("click", wrong)
+wc1.addEventListener("click", wrong)
+wc2.addEventListener("click", wrong)
+wc3.addEventListener("click", wrong)
+wc4.addEventListener("click", wrong)
+wc5.addEventListener("click", wrong)
+wc6.addEventListener("click", wrong)
+wc7.addEventListener("click", wrong)
+wc8.addEventListener("click", wrong)
+wc9.addEventListener("click", wrong)
+wc10.addEventListener("click", wrong)
+wc11.addEventListener("click", wrong)
+wc12.addEventListener("click", wrong)
 
 function nextQuestion() {
     var questions = document.querySelector(".questions") //why cant i do quertSelectorAll?
@@ -72,11 +105,8 @@ function nextQuestion() {
     ending.setAttribute("id", "show")
     var questions = document.querySelector(".questions4")
     questions.setAttribute("id", "hide")
+    clearInterval(timerId)
+    score.textContent = time
  }
 
  correctFour.addEventListener("click", end)
-
-
-
-
-
